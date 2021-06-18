@@ -1,6 +1,26 @@
 import 'package:flutter/material.dart';
+import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:firebase_core/firebase_core.dart';
+import 'package:show_room_app/Cafe.dart';
 
-void main() {
+//CÓDIGO PARA VERIFICAÇÃO DO BANCO DE DADOS.
+//  var db = FirebaseFirestore.instance;
+
+//       db
+//           .collection('cafes')
+//           .add({"nome": "Café Melita 500g", "preco": "R\$ 9,85"});
+//       db
+//           .collection('cafes')
+//           .doc("cafe001")
+//           .set({"nome": "Café Melita 500g", "preco": "R\$ 9,85"});
+
+//       Cafe cafe = Cafe('', 'Café Utam 1kg', 'R\$ 25,65');
+//       db.collection('cafes').add(cafe.toJson());
+
+void main() async {
+  //FAZENDO A INICIALIZAÇÃO DO BANCO DE DADOS.
+  WidgetsFlutterBinding.ensureInitialized();
+  await Firebase.initializeApp();
   runApp(MyApp());
 }
 
@@ -55,7 +75,7 @@ class _MyHomePageState extends State<MyHomePage> {
       // so that the display can reflect the updated values. If we changed
       // _counter without calling setState(), then the build method would not be
       // called again, and so nothing would appear to happen.
-      _counter++;
+     
     });
   }
 
