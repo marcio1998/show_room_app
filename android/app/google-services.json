@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "987843240248",
+    "project_id": "showroomapp-c3361",
+    "storage_bucket": "showroomapp-c3361.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:987843240248:android:a351a30e0f8b9f3928e1cd",
+        "android_client_info": {
+          "package_name": "com.example.show_room_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "987843240248-g3dntl3v5gnhhaqvb9i9oujavki2650p.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBDKalaZ_VKZYPc2CWx9Z66vWSJmsuYD7Q"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "987843240248-g3dntl3v5gnhhaqvb9i9oujavki2650p.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
