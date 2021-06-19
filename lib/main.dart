@@ -3,10 +3,12 @@ import 'package:flutter/material.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:show_room_app/CadastrarCarro.dart';
+import 'package:show_room_app/CadastrarMoto.dart';
 import 'package:show_room_app/CadastroDeUsuario.dart';
 import 'package:show_room_app/Cafe.dart';
 import 'package:show_room_app/CarrosCadastrados.dart';
 import 'package:show_room_app/Login.dart';
+import 'package:show_room_app/MotosCadastradas.dart';
 import 'PaginaInicial.dart';
 
 //CÓDIGO PARA VERIFICAÇÃO DO BANCO DE DADOS.
@@ -94,6 +96,8 @@ class MyApp extends StatelessWidget {
         '/login': (context) => Login(),
         '/cadastrarcarro': (context) => CadastrarCarro(),
         '/carroscadastrados': (context) => CarrosCadastrados(),
+        '/cadastrarmoto': (context) => CadastrarMoto(),
+        '/motoscadastradas': (context) => MotosCadastrdas(),
       },
       home: MyHomePage(),
     );

@@ -38,6 +38,20 @@ class PaginaInicial extends StatelessWidget {
                 ),
                 onTap: () => Navigator.pushNamed(context, '/carroscadastrados'),
               ),
+              ListTile(
+                title: Text(
+                  "Cadastrar Moto",
+                  style: Theme.of(context).textTheme.headline2,
+                ),
+                onTap: () => Navigator.pushNamed(context, '/cadastrarmoto'),
+              ),
+              ListTile(
+                title: Text(
+                  "Motos Cadastradas",
+                  style: Theme.of(context).textTheme.headline2,
+                ),
+                onTap: () => Navigator.pushNamed(context, '/motoscadastradas'),
+              ),
             ],
           ),
         ),
