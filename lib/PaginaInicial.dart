@@ -36,7 +36,7 @@ class PaginaInicial extends StatelessWidget {
                   "Visualizar Carros Cadastrados",
                   style: Theme.of(context).textTheme.headline2,
                 ),
-                onTap: () => Navigator.pushNamed(context, '/cadastrarcarro'),
+                onTap: () => Navigator.pushNamed(context, '/carroscadastrados'),
               ),
             ],
           ),

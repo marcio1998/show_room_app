@@ -5,6 +5,7 @@ import 'package:firebase_core/firebase_core.dart';
 import 'package:show_room_app/CadastrarCarro.dart';
 import 'package:show_room_app/CadastroDeUsuario.dart';
 import 'package:show_room_app/Cafe.dart';
+import 'package:show_room_app/CarrosCadastrados.dart';
 import 'package:show_room_app/Login.dart';
 import 'PaginaInicial.dart';
 
@@ -73,6 +74,17 @@ class MyApp extends StatelessWidget {
               fontSize: 24,
               fontWeight: FontWeight.bold,
               fontFamily: 'DancingScript',
+            ),
+            headline5: TextStyle(
+              color: Colors.amber,
+              fontSize: 17,
+              fontWeight: FontWeight.bold,
+            ),
+            headline6: TextStyle(
+              color: Colors.black,
+              fontSize: 22,
+              fontWeight: FontWeight.bold,
+              fontFamily: 'DancingScript',
             )),
       ),
 
@@ -81,6 +93,7 @@ class MyApp extends StatelessWidget {
         '/cadastrodeusuario': (context) => CadastroDeUsuario(),
         '/login': (context) => Login(),
         '/cadastrarcarro': (context) => CadastrarCarro(),
+        '/carroscadastrados': (context) => CarrosCadastrados(),
       },
       home: MyHomePage(),
     );
