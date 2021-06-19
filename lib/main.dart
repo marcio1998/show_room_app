@@ -1,39 +1,32 @@
 import 'package:firebase_auth/firebase_auth.dart';
+
 import 'package:flutter/material.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:show_room_app/CadastrarCarro.dart';
 import 'package:show_room_app/CadastrarMoto.dart';
 import 'package:show_room_app/CadastroDeUsuario.dart';
-import 'package:show_room_app/Cafe.dart';
 import 'package:show_room_app/CarrosCadastrados.dart';
 import 'package:show_room_app/Login.dart';
 import 'package:show_room_app/MotosCadastradas.dart';
 import 'PaginaInicial.dart';
 
-//CÓDIGO PARA VERIFICAÇÃO DO BANCO DE DADOS.
-//  var db = FirebaseFirestore.instance;
-
-//       db
-//           .collection('cafes')
-//           .add({"nome": "Café Melita 500g", "preco": "R\$ 9,85"});
-//       db
-//           .collection('cafes')
-//           .doc("cafe001")
-//           .set({"nome": "Café Melita 500g", "preco": "R\$ 9,85"});
-
-//       Cafe cafe = Cafe('', 'Café Utam 1kg', 'R\$ 25,65');
-//       db.collection('cafes').add(cafe.toJson());
-
 void main() async {
   //FAZENDO A INICIALIZAÇÃO DO BANCO DE DADOS.
   WidgetsFlutterBinding.ensureInitialized();
   await Firebase.initializeApp();
+  //Monitoramento em tempo real
+  CollectionReference reference =
+      FirebaseFirestore.instance.collection('usuarios');
+  reference.snapshots().listen((QuerySnapshot querySnapshot) {
+    querySnapshot.docChanges.forEach((element) {
+      print('Usario atualizadas com sucesso');
+    });
+  });
   runApp(MyApp());
 }
 
 class MyApp extends StatelessWidget {
-  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
