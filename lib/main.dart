@@ -2,6 +2,7 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_core/firebase_core.dart';
+import 'package:show_room_app/CadastrarCarro.dart';
 import 'package:show_room_app/CadastroDeUsuario.dart';
 import 'package:show_room_app/Cafe.dart';
 import 'package:show_room_app/Login.dart';
@@ -78,7 +79,8 @@ class MyApp extends StatelessWidget {
       //Definição de rotas
       routes: {
         '/cadastrodeusuario': (context) => CadastroDeUsuario(),
-        '/login': (context) => Login()
+        '/login': (context) => Login(),
+        '/cadastrarcarro': (context) => CadastrarCarro(),
       },
       home: MyHomePage(),
     );
