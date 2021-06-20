@@ -120,8 +120,17 @@ class MostrarCarro extends StatelessWidget {
                   ),
                 ],
               ),
+              Container(
+                padding: EdgeInsets.only(left: 180, bottom: 10),
+                child: FloatingActionButton(
+                  backgroundColor: Colors.amber,
+                  onPressed: () => Navigator.pushNamed(context, '/editarcarro',
+                      arguments: carro.id),
+                  child: Icon(Icons.update),
+                ),
+              )
             ],
-          )
+          ),
         ],
       ),
     );

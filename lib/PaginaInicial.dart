@@ -33,7 +33,7 @@ class PaginaInicial extends StatelessWidget {
               ),
               ListTile(
                 title: Text(
-                  "Visualizar Carros Cadastrados",
+                  "Carros Cadastrados",
                   style: Theme.of(context).textTheme.headline2,
                 ),
                 onTap: () => Navigator.pushNamed(context, '/carroscadastrados'),
@@ -51,6 +51,13 @@ class PaginaInicial extends StatelessWidget {
                   style: Theme.of(context).textTheme.headline2,
                 ),
                 onTap: () => Navigator.pushNamed(context, '/motoscadastradas'),
+              ),
+              ListTile(
+                title: Text(
+                  "Usuários Cadastrados",
+                  style: Theme.of(context).textTheme.headline2,
+                ),
+                onTap: () => Navigator.pushNamed(context, '/mostrarusuarios'),
               ),
             ],
           ),

@@ -22,12 +22,13 @@ class MostrarMoto extends StatelessWidget {
           ),
           Column(
             children: [
-              Container(
-                  padding: EdgeInsets.only(left: 30, top: 10),
+              FittedBox(
+                  //padding: EdgeInsets.only(left: 30, top: 10),
                   child: Text(
-                    moto.marca,
-                    style: Theme.of(context).textTheme.headline1,
-                  )),
+                moto.marca,
+                style: Theme.of(context).textTheme.headline1,
+              )),
+
               Row(
                 children: [
                   FittedBox(
@@ -120,8 +121,18 @@ class MostrarMoto extends StatelessWidget {
                   ),
                 ],
               ),
+              Container(
+                padding: EdgeInsets.only(left: 180, bottom: 10),
+                child: FloatingActionButton(
+                  backgroundColor: Colors.amber,
+                  onPressed: () => Navigator.pushNamed(context, '/editarmoto',
+                      arguments: moto.id),
+                  child: Icon(Icons.update),
+                ),
+              )
+              
             ],
-          )
+          ),
         ],
       ),
     );

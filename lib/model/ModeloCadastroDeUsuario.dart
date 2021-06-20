@@ -11,14 +11,18 @@ class ModeloCadastroDeusuario {
       @required this.telefone, @required this.email, @required this.senha);
 
   ModeloCadastroDeusuario.fromJson(Map<String, dynamic> map, String id) {
-    //O id é por que eu quero checar ele
-    //Aqui é tudo igual, Strin e Dynamic por que são as unicas variaveis aceitas no firebase
     this.id = id;
     this.nome = map['nome'];
     this.telefone = map['telefone'];
+    this.email = map['email'];
   }
 
   Map<String, dynamic> toJson() {
-    return {'id': this.id, 'nome': this.nome, 'telefone': this.telefone};
+    return {
+      'id': this.id,
+      'nome': this.nome,
+      'telefone': this.telefone,
+      'email': this.email
+    };
   }
 }

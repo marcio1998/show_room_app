@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 
 class Carro {
+  late String id;
   late String marca;
   late String modelo;
   late String ano;
@@ -12,8 +13,7 @@ class Carro {
       @required this.potencia, @required this.motor, @required this.urlImg);
 
   Carro.fromJson(Map<String, dynamic> map, String id) {
-    //O id é por que eu quero checar ele
-    //Aqui é tudo igual, Strin e Dynamic por que são as unicas variaveis aceitas no firebase
+    this.id = id;
     this.marca = map['marca'];
     this.modelo = map['modelo'];
     this.ano = map['ano'];

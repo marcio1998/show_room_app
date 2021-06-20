@@ -7,8 +7,12 @@ import 'package:show_room_app/CadastrarCarro.dart';
 import 'package:show_room_app/CadastrarMoto.dart';
 import 'package:show_room_app/CadastroDeUsuario.dart';
 import 'package:show_room_app/CarrosCadastrados.dart';
+import 'package:show_room_app/EditarMoto.dart';
 import 'package:show_room_app/Login.dart';
+import 'package:show_room_app/MostrarUsuariosCadastrados.dart';
 import 'package:show_room_app/MotosCadastradas.dart';
+import 'package:show_room_app/UsuariosCadastrados.dart';
+import 'package:show_room_app/EditarCarro.dart';
 import 'PaginaInicial.dart';
 
 void main() async {
@@ -91,6 +95,9 @@ class MyApp extends StatelessWidget {
         '/carroscadastrados': (context) => CarrosCadastrados(),
         '/cadastrarmoto': (context) => CadastrarMoto(),
         '/motoscadastradas': (context) => MotosCadastrdas(),
+        '/mostrarusuarios': (context) => UsuariosCadastrados(),
+        '/editarcarro': (context) => EditarCarro(),
+        '/editarmoto': (context) => EditarMoto()
       },
       home: MyHomePage(),
     );
