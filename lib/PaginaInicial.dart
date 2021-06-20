@@ -59,6 +59,13 @@ class PaginaInicial extends StatelessWidget {
                 ),
                 onTap: () => Navigator.pushNamed(context, '/mostrarusuarios'),
               ),
+              ListTile(
+                title: Text(
+                  "Sobre",
+                  style: Theme.of(context).textTheme.headline2,
+                ),
+                onTap: () => Navigator.pushNamed(context, '/sobre'),
+              ),
             ],
           ),
         ),

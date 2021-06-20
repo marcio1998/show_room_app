@@ -11,6 +11,7 @@ import 'package:show_room_app/EditarMoto.dart';
 import 'package:show_room_app/Login.dart';
 import 'package:show_room_app/MostrarUsuariosCadastrados.dart';
 import 'package:show_room_app/MotosCadastradas.dart';
+import 'package:show_room_app/Sobre.dart';
 import 'package:show_room_app/UsuariosCadastrados.dart';
 import 'package:show_room_app/EditarCarro.dart';
 import 'PaginaInicial.dart';
@@ -97,7 +98,8 @@ class MyApp extends StatelessWidget {
         '/motoscadastradas': (context) => MotosCadastrdas(),
         '/mostrarusuarios': (context) => UsuariosCadastrados(),
         '/editarcarro': (context) => EditarCarro(),
-        '/editarmoto': (context) => EditarMoto()
+        '/editarmoto': (context) => EditarMoto(),
+        '/sobre': (context) => Sobre(),
       },
       home: MyHomePage(),
     );
