@@ -15,7 +15,7 @@ class _UsuariosCadastradosState extends State<UsuariosCadastrados> {
     return Scaffold(
       appBar: AppBar(
         title: Text(
-          "Carros Cadastrados",
+          "Usuários Cadastrados",
           style: Theme.of(context).appBarTheme.titleTextStyle,
         ),
       ),

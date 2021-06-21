@@ -52,7 +52,7 @@ class _EditarMotoState extends State<EditarMoto> {
               Container(
                 margin: EdgeInsets.only(bottom: 40),
                 child: Text(
-                  "Editar Carro",
+                  "Editar Moto",
                   style: Theme.of(context).textTheme.headline1,
                 ),
               ),
